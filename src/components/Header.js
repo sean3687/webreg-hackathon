@@ -4,9 +4,9 @@ import { AiOutlineUser } from "react-icons/ai";
 
 function Header() {
   return (
-    <div className="flex flex-row w-full justify-between items-center py-2">
-      <img src={logo} className="flex w-24" />
-      <AiOutlineUser className="flex" size={42} />
+    <div className="flex flex-row w-full justify-between items-center p-2">
+      <img src={logo} className="flex w-12" />
+      <AiOutlineUser className="flex" size={22} />
     </div>
   );
 }
