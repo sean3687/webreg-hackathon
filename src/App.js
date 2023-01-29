@@ -14,7 +14,7 @@ function App() {
   const [classSearchSelected, setClassSearchSelected] = useState(true);
   const [mapSelected, setMapSelected] = useState(false);
   return (
-    <div className="flex flex-col h-full bg-background ">
+    <div className="flex flex-col h-full bg-background">
       <Header />
       <Banner />
       <div className="flex flex-row justify-between py-2 ">
@@ -33,7 +33,7 @@ function App() {
           setMapSelected={setMapSelected}
         />
       </div>
-      <div className="flex flex-row justify-between py-2 h-4/6 overflow-hidden">
+      <div className="flex flex-row justify-between py-2 h-4/6">
         <Schedule
           calendarSelected={calendarSelected}
           listSelected={listSelected}

@@ -54,7 +54,7 @@ function ClassListItem(props) {
       </div>
       <p className="w-[10%]">{props.location}</p>
       <p className="w-[10%]">255/255</p>
-      <p className="w-[7%]">status</p>
+      <p className="w-[7%]">Empty</p>
     </div>
   );
 }
