@@ -29,7 +29,6 @@ function ScheduleBar(props) {
             }}
           />
         </SegmentedControl>
-        ˝
         <SegmentedControl states={[props.finalsSelected]}>
           <SegmentedButtonText
             name="Finals"
