@@ -5,44 +5,39 @@ import {
 } from "../segemented/SegmentedButton";
 import SegmentedControl from "../segemented/SegmentedControl";
 
-function ScheduleBar() {
-  const [calendarSelected, setCalendarSelected] = useState(true);
-  const [listSelected, setListSelected] = useState(false);
-
-  const [finalsSelected, setFinalsSelected] = useState(false);
-
+function ScheduleBar(props) {
   return (
     <div className="flex w-1/2 ml-2 mr-1 bg-inner-background rounded-lg p-2 items-center justify-between">
       <div className="flex flex-row items-center">
-        <SegmentedControl states={[calendarSelected, listSelected]}>
+        <SegmentedControl states={[props.calendarSelected, props.listSelected]}>
           <SegmentedButtonText
             name="Calendar"
-            selected={calendarSelected}
+            selected={props.calendarSelected}
             onClick={() => {
-              setFinalsSelected(false);
-              setListSelected(false);
-              setCalendarSelected(true);
+              props.setFinalsSelected(false);
+              props.setListSelected(false);
+              props.setCalendarSelected(true);
             }}
           />
           <SegmentedButtonText
             name="List"
-            selected={listSelected}
+            selected={props.listSelected}
             onClick={() => {
-              setFinalsSelected(false);
-              setCalendarSelected(false);
-              setListSelected(true);
+              props.setFinalsSelected(false);
+              props.setCalendarSelected(false);
+              props.setListSelected(true);
             }}
           />
         </SegmentedControl>
         ˝
-        <SegmentedControl states={[finalsSelected]}>
+        <SegmentedControl states={[props.finalsSelected]}>
           <SegmentedButtonText
             name="Finals"
-            selected={finalsSelected}
+            selected={props.finalsSelected}
             onClick={() => {
-              setCalendarSelected(false);
-              setListSelected(false);
-              setFinalsSelected(true);
+              props.setCalendarSelected(false);
+              props.setListSelected(false);
+              props.setFinalsSelected(true);
             }}
           />
         </SegmentedControl>
