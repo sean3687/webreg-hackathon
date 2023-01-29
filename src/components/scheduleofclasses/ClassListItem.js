@@ -23,7 +23,7 @@ function ClassListItem(props) {
   const times = () => {};
   return props.simplified ? (
     <div
-      className={`flex flex-row w-full justify-between items-center bg-[#B5B4B4] p-3 rounded-lg`}
+      className={`flex flex-row w-full justify-between items-center bg-[#B5B4B4] p-3 rounded-lg mb-2`}
     >
       <div className="flex flex-row w-2/3 items-center">
         <p className="w-[10%] mr-2">{props.id}</p>

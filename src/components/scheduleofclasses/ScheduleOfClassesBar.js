@@ -22,6 +22,20 @@ const IntheBag = [
     time: [8, 11],
     opacity: 1,
   },
+  {
+    id: 26458,
+    departmentName: "MATH",
+    courseLevel: "3A",
+    type: "LEC",
+    pass: false,
+    waitlist: false,
+    units: 2,
+    location: "SSL 78",
+    Instructor: "NAIR, S.",
+    day: [2, 4],
+    time: [8, 11],
+    opacity: 1,
+  },
 ];
 
 function ScheduleOfClassesBar(props) {
@@ -60,7 +74,7 @@ function ScheduleOfClassesBar(props) {
         </button>
         {modalShow ? (
           <div
-            className="absolute flex top-0 left-0 w-full h-full bg-black/60"
+            className="absolute flex top-0 left-0 w-full h-full bg-black/60 z-10"
             onClick={() => setModalShow(false)}
           >
             <button

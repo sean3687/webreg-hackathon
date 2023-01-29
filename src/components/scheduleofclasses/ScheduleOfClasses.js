@@ -63,12 +63,12 @@ function ScheduleOfClasses(props) {
   }, [search]);
 
   return (
-    <div className="flex flex-col w-1/2 h-fullmr-2 ml-1 bg-inner-background rounded-lg">
+    <div className="flex flex-col w-1/2 mr-2 ml-1 bg-inner-background rounded-lg">
       {/* TODO */}
-      {/* <img 
+      <img
         src={anteater}
-        className="aspect-video  h-1/2 opacity-40 -rotate-45 "
-      /> */}
+        className="aspect-video  absolute w-[45%] -bottom-[5%] -right-[11%] opacity-40 -rotate-45  "
+      />
       {props.classSearchSelected ? (
         <div className="flex flex-col h-full w-full">
           <div className="p-2">

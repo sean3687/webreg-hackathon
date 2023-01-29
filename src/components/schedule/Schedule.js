@@ -1,7 +1,7 @@
 import React from "react";
 import ClassListGroup from "./list-view/ClassListGroup";
 import ClassListRow from "./list-view/ClassListRow";
-
+import calendar from "../../assets/imgs/calendar-picture.png";
 const waitlist = [
   [
     {
@@ -130,7 +130,11 @@ const enrolled = [
 function Schedule(props) {
   return (
     <div className="flex w-1/2 h-full ml-2 mr-1">
-      {props.calendarSelected ? <div>calendar</div> : null}
+      {props.calendarSelected ? (
+        <div className="m-auto">
+          <img src={calendar} className=" h-[130%]" />
+        </div>
+      ) : null}
       {props.listSelected ? (
         <div id="list-container" className="w-full p-2 overflow-y-scroll ">
           <p className="font-bold text-xl text-[#0D2441] mb-2">Schedule</p>
