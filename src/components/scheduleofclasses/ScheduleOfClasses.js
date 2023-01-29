@@ -63,7 +63,7 @@ function ScheduleOfClasses(props) {
   }, [search]);
 
   return (
-    <div className="flex flex-col w-1/2 mr-2 ml-1 bg-inner-background rounded-lg">
+    <div className="flex flex-col w-1/2 h-fullmr-2 ml-1 bg-inner-background rounded-lg">
       {/* TODO */}
       {/* <img 
         src={anteater}

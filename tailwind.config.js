@@ -14,6 +14,7 @@ module.exports = {
         "user-card-yellow": "#FFD04A",
         "success-green": "#2FA156",
         "unsuccessful-red": "#E93434",
+        "course-group-blue": "#0D2441",
       },
     },
   },

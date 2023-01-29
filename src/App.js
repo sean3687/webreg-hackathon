@@ -33,7 +33,7 @@ function App() {
           setMapSelected={setMapSelected}
         />
       </div>
-      <div className="flex flex-row justify-between py-2 h-full">
+      <div className="flex flex-row justify-between py-2 h-[71%]">
         <Schedule
           calendarSelected={calendarSelected}
           listSelected={listSelected}
