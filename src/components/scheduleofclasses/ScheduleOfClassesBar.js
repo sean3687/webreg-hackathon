@@ -1,5 +1,5 @@
 import React from "react";
-import SegmentedControl from "./SegmentedControl";
+import SegmentedControl from "../SegmentedControl";
 import { MdOutlineBackpack } from "react-icons/md";
 
 function ScheduleOfClassesBar() {
