@@ -1,48 +1,35 @@
 import React, { useState } from "react";
 import SegmentedControl from "../segemented/SegmentedControl";
 import { MdOutlineBackpack } from "react-icons/md";
-import { HiOutlineTrash } from "react-icons/hi"
 import { SegmentedButtonText } from "../segemented/SegmentedButton";
-import { Modal, Button } from "react-bootstrap";
-import Form from "react-bootstrap/Form";
+import { IoIosArrowBack } from "react-icons/io";
+
+import ClassListItem from "./ClassListItem";
 
 const day = ["M", "T", "W", "T", "F", "S", "S"];
-const IntheBag = {
-  courses: [
-    {
-      id: 26352,
-      departmentName: "ENGR",
-      courseLevel: "70",
-      type: "LAB",
-      pass: false,
-      waitlist: false,
-      units: 2,
-      location: "SSL 78",
-      Instructor: "Serate, K.",
-      day: [2, 4],
-      time: [8, 11],
-      opacity: 1,
-    },
-  ],
-};
+const IntheBag = [
+  {
+    id: 26352,
+    departmentName: "ENGR",
+    courseLevel: "70",
+    type: "LAB",
+    pass: false,
+    waitlist: false,
+    units: 2,
+    location: "SSL 78",
+    Instructor: "Serate, K.",
+    day: [2, 4],
+    time: [8, 11],
+    opacity: 1,
+  },
+];
 
 function ScheduleOfClassesBar(props) {
   const [modalShow, setModalShow] = useState(false);
-  const handle = () => setModalShow(false);
   const handleClick = () => {
     setModalShow(true);
-    console.log("backpack clicked");
   };
 
-  const close = () => {
-    setModalShow(false);
-  };
-
-  const submit = () => {
-    //submit to the calander
-    setModalShow(false);
-    //dispatch for redux
-  };
   return (
     <div className="flex w-1/2 ml-2 mr-1 bg-inner-background rounded-lg p-2 items-center justify-between">
       <div className="flex flex-row items-center">
@@ -66,62 +53,47 @@ function ScheduleOfClassesBar(props) {
         </SegmentedControl>
       </div>
       <div>
-        <div className="flex flex-row items-center" onClick={handleClick}>
-          <MdOutlineBackpack size={32} />
-        </div>
-        <div
-          className="modal show"
-          style={{ display: "block", position: "initial" }}
-        >
-          <Modal show={modalShow} onHide={handle} className="w-100">
-            <Modal.Header closeButton>
-              <Modal.Title>Your Backpack</Modal.Title>
-            </Modal.Header>
-
-            <Modal.Body className="">
-              <div>
-                {IntheBag.courses.map((item, key) => (
-                  <div className="bg-gray-100 p-3 rounded flex">
-                    <div className="">{item.id}</div>
-                    <div className="ml-10">
-                      {item.departmentName} {item.courseLevel}
-                    </div>
-                    <div className="ml-10">{item.type}</div>
-                    <div className="">
-                      <Form className="flex">
-                        <Form.Check
-                          type="switch"
-                          id="custom-switch"
-                          variant="danger"
-                          label="PASS/FAIL"
-                        />
-                        <Form.Check
-                          type="switch"
-                          id="custom-switch"
-                          variant="warning"
-                          label="Waitlist"
-                        />
-                      </Form>
-                    </div>
-                    <div className="text-2xl ">
-                      {/* <HiOutlineTrash/> */}
-                    </div>
-
+        <button onClick={handleClick} className="items-center">
+          <div className="flex flex-row">
+            <MdOutlineBackpack size={32} />
+          </div>
+        </button>
+        {modalShow ? (
+          <div
+            className="absolute flex top-0 left-0 w-full h-full bg-black/60"
+            onClick={() => setModalShow(false)}
+          >
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+              }}
+              className="flex flex-col m-auto w-2/3 h-2/3 bg-dark-gray rounded-lg p-2"
+            >
+              <div className="flex flex-col w-full h-full justify-between">
+                <div>
+                  <div className="flex flex-row items-center mb-2">
+                    <button onClick={() => setModalShow(false)}>
+                      <IoIosArrowBack size={32} className="text-[#464646]" />
+                    </button>
+                    <p className="text-[#464646] text-2xl">Your Backpack</p>
                   </div>
-                ))}
+                  <div className="p-2">
+                    {IntheBag.map((item) => (
+                      <ClassListItem simplified key={item.id} {...item} />
+                    ))}
+                  </div>
+                </div>
+                <div className="flex justify-end">
+                  <button onClick={() => setModalShow(false)} className="w-1/5">
+                    <div className="flex justify-center p-2 bg-user-card-yellow rounded-lg">
+                      <p className="font-semibold">Enroll Now</p>
+                    </div>
+                  </button>
+                </div>
               </div>
-            </Modal.Body>
-
-            <Modal.Footer>
-              <Button variant="secondary" onClick={close}>
-                Close
-              </Button>
-              <Button class="text-#000000" variant="primary" onClick={submit}>
-                Enroll Now
-              </Button>
-            </Modal.Footer>
-          </Modal>
-        </div>
+            </button>
+          </div>
+        ) : null}
       </div>
     </div>
   );
