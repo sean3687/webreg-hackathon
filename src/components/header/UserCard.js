@@ -54,7 +54,7 @@ function UserCard(props) {
         </button>
       </div>
       <button onClick={() => alert("Signing out")}>
-        <div className="flex flex-row items-center w-fit">
+        <div className="flex flex-row items-center w-fit ml-2 mb-2">
           <p className="font-semibold mr-2">Sign Out</p>
           <MdLogout size={28} />
         </div>

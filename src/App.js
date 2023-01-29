@@ -1,8 +1,8 @@
 import React from "react";
 import Banner from "./components/Banner";
 import Header from "./components/header/Header";
-import Schedule from "./components/Schedule";
-import ScheduleBar from "./components/ScheduleBar";
+import Schedule from "./components/schedule/Schedule";
+import ScheduleBar from "./components/schedule/ScheduleBar";
 import ScheduleOfClasses from "./components/scheduleofclasses/ScheduleOfClasses";
 import ScheduleOfClassesBar from "./components/scheduleofclasses/ScheduleOfClassesBar";
 
