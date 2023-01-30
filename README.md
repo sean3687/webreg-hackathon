@@ -28,7 +28,7 @@ npm start
 
 
 
-### Key Stack
+### Tech Stack
 
 - Front-end: Tailwind-CSS, Bootstrap, Redux, Customized Calander
 - Backend: SQL, Sequelize, expressjs
