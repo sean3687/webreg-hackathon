@@ -18,6 +18,8 @@ update all dependencies that needs
 npm intall
 ```
 
+
+
 start your application with npm
 
 ```
@@ -31,6 +33,14 @@ npm start
 - Front-end: Tailwind-CSS, Bootstrap, Redux, Customized Calander
 - Backend: SQL, Sequelize, expressjs
 
-
-
 ### Prototype
+
+![Main Dashboard](https://github.com/sean3687/webreg-hackathon/blob/main/src/assets/imgs/1.png?raw=true)
+
+
+
+![ClassList](https://github.com/sean3687/webreg-hackathon/blob/main/src/assets/imgs/2.png?raw=true)
+
+
+
+![Backpack](https://github.com/sean3687/webreg-hackathon/blob/main/src/assets/imgs/3.png?raw=true)
