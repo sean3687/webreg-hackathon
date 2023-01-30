@@ -1,46 +1,104 @@
-# Getting Started with Create React App and Redux
+### 2023 UCI Webreg Hackathon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+The UCI University Registrar has hired a consulting company to help them update WebReg’s interface. The ANTrepreneur Center is partnering with the Registrar to help them with customer discovery so that current UCI students can offer high-value feedback on the current website and course registration process. Through our WebReg Hackathon, the University Registrar will be able to gather ideas from students for their new interface.
 
-## Available Scripts
+### What Our Team Do
 
-In the project directory, you can run:
+- Go to the Customer Discovery section to find problems with the current registration system. 
+- Use agile methodologies to plan for Prototype
+- We built UI/UX Prototype Design on Figma : <https://www.figma.com/file/BwFPrs14GW9QUqfw4cedKk/Untitled?node-id=0%3A1&t=hkcljRVZDm8blayk-1>
+- Deploy prototype application based on Figma Design : <https://webreg-hackathon.vercel.app/>
+- Pitch out prototype: <https://pitch.com/public/760b0679-4691-4237-9281-9a902d6577a8/a50f19ef-06ca-4cd9-8daa-249a02333186>
 
-### `npm start`
+### To Get Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+update all dependencies that needs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+npm intall
+```
 
-### `npm test`
+start your application with npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm start
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Key Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Front-end: Tailwind-CSS, Bootstrap, Redux, Customized Calander
+- Backend: SQL, Sequelize, expressjs
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prototype
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/b0f44d9-Screenshot_2023-01-30_at_2.01.22_PM.png",
+        null,
+        null
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Main Dashboard"
+    }
+  ]
+}
+[/block]
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/4528c57-Screenshot_2023-01-30_at_2.01.48_PM.png",
+        null,
+        null
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Listview"
+    }
+  ]
+}
+[/block]
 
-## Learn More
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/b5d0864-Screenshot_2023-01-30_at_2.01.38_PM.png",
+        null,
+        null
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "Backpack Function"
+    }
+  ]
+}
+[/block]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[block:image]
+{
+  "images": [
+    {
+      "image": [
+        "https://files.readme.io/e4bf80d-Screenshot_2023-01-30_at_2.08.59_PM.png",
+        null,
+        null
+      ],
+      "align": "center",
+      "border": true,
+      "caption": "User Information at Top Right"
+    }
+  ]
+}
+[/block]
